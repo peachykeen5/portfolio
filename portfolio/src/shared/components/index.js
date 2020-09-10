@@ -3,3 +3,7 @@ export * from "./StyledColumn";
 export * from "./StyledDiv";
 export * from "./Background";
 export * from "./Container";
+export * from "./Button";
+export * from "./Images";
+export * from "./Toggle";
+export * from "./NavBar";

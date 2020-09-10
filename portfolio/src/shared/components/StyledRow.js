@@ -7,6 +7,7 @@ import {
   flexDirection,
   color,
 } from "styled-system";
+import * as ds from "../../uiLibrary";
 
 export const Row = styled.div`
   display: grid;
@@ -15,7 +16,7 @@ export const Row = styled.div`
 `;
 
 export const FixedWidthRow = styled(Row)`
-  padding: 2rem;
+  padding: ${ds.spacing.s4};
   ${space};
   ${display};
   ${alignItems};
