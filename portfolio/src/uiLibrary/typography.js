@@ -89,10 +89,15 @@ export const H3 = styled.h2`
   ${letterSpacing};
 `;
 
+export const H4 = styled(H3)`
+  font-size: ${ds.typeScale.t5};
+`
+
 export const Label = styled(Body)`
   font-size: ${ds.typeScale.t5};
   font-weight: 700;
   text-transform: uppercase;
+  ${fontSize};
 `;
 
 export const ToggleLabel = styled.label`

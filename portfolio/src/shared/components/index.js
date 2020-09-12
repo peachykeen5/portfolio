@@ -7,3 +7,5 @@ export * from "./Button";
 export * from "./Images";
 export * from "./Toggle";
 export * from "./NavBar";
+export * from "./ProgressBar";
+export * from "./Skills";

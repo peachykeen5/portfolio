@@ -14,7 +14,7 @@ export const NavBar = (props) => {
 
   return (
     <StyledNavBar>
-      <FixedWidthRow display="flex" justifyContent="space-between">
+      <FixedWidthRow display={["none", "flex"]} justifyContent="space-around">
         {header.map((item) => {
           return <Label color={props.theme.textHighContrast}>{item}</Label>;
         })}
