@@ -14,13 +14,13 @@ import {
 } from "./shared/components";
 import { skills } from "./shared/SkillsSet";
 import * as ds from "./uiLibrary";
-import headerImage from "./images/headerPhoto3.jpg";
+import darkHeaderImage from "./images/headerPhoto3.jpg";
+import lightHeaderImage from "./images/headerPhoto2.jpeg";
 import { Headline, H3, H2, H4, Body, Label } from "./uiLibrary";
 import strings from "./shared/strings";
 
 const App = () => {
   const [theme, setTheme] = useState(themeConfig.light);
-  console.log(theme);
 
   const handleClick = () => {
     if (theme === themeConfig.dark) {
@@ -46,8 +46,7 @@ const App = () => {
                 my={ds.spacing.s5}
               >
                 <CenteredImage
-                  maring={ds.spacing.s4}
-                  src={headerImage}
+                  src={theme === themeConfig.dark ? darkHeaderImage : lightHeaderImage}
                   mw="30%"
                 />
                 <Headline
@@ -141,7 +140,7 @@ const App = () => {
                         {e.companyName}
                       </Label>
                       <H4 color={theme.textHighContrast} my={ds.spacing.s1}>
-                        {e.jobTitle}
+                        <i>{e.jobTitle}</i>
                       </H4>
                       <H4 color={theme.textHighContrast} my={ds.spacing.s1}>
                         {e.date}

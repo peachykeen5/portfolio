@@ -9,6 +9,7 @@ const StyledContainer = styled.div`
     background-color: #e7efee;
     border-radius: 5px;
     margin: 50px;
+    filter: drop-shadow(1px 1px 2px #2f2f2f);
     ${space};
 `
 

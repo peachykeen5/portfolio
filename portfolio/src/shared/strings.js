@@ -17,7 +17,7 @@ export default {
         experience: [
             {
                 companyName: "TONIT",
-                jobTitle: "front-end developer",
+                jobTitle: "intermediate front-end developer",
                 date: "August 2018 - present",
                 description: "Meggings heirloom gastropub, jean shorts fanny pack flexitarian aesthetic crucifix put a bird on it. Keffiyeh ennui pop-up health goth bushwick chillwave viral neutra kogi mlkshk literally iPhone vape poke shaman.",
             },
