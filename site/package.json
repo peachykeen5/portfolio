@@ -17,7 +17,7 @@
   "homepage": "http://lexikeen.com",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && serve",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

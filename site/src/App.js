@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import { ThemeContext, themeConfig } from "./shared/ThemeProvider";
 import {
   FixedWidthRow,
@@ -46,7 +45,11 @@ const App = () => {
                 my={ds.spacing.s5}
               >
                 <CenteredImage
-                  src={theme === themeConfig.dark ? darkHeaderImage : lightHeaderImage}
+                  src={
+                    theme === themeConfig.dark
+                      ? darkHeaderImage
+                      : lightHeaderImage
+                  }
                   mw="30%"
                 />
                 <Headline
