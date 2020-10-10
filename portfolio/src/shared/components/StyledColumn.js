@@ -1,14 +1,34 @@
 import styled from "styled-components";
-import { space, color, order, justifyContent, alignItems } from "styled-system";
+import {
+  space,
+  color,
+  order,
+  justifyContent,
+  alignItems,
+  textAlign,
+  position,
+  display,
+  justifySelf,
+  flexDirection,
+} from "styled-system";
+import * as ds from "../../uiLibrary/theme";
 
 export const Column = styled.aside`
-  ${space};
-  display: flex;
-  flex-direction: column;
+  grid-column: span 12;
+  @media screen and (min-width: ${ds.mq.small}) {
+    grid-column: span ${(props) => props.span};
+    order: ${(props) => props.order};
+  }
+  ${textAlign};
   ${order};
-  ${color};
-  ${justifyContent};
+  ${position};
+  ${display};
+  ${space};
   ${alignItems};
+  ${justifyContent};
+  ${justifySelf};
+  ${flexDirection};
+  ${color};
   ${(props) =>
     props.vc
       ? `

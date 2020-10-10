@@ -9,6 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "react-toggle-component": "^3.0.8",
     "styled-components": "^5.2.0",
     "styled-system": "^5.1.5"
   },

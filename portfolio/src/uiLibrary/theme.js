@@ -20,3 +20,11 @@ export const typeScale = {
     t7: "2.827rem",
     t8: "3.998rem",
 }
+
+export const mq = {
+    xsmall: "35em",
+    small: "40em",
+    medium: "50em",
+    large: "65em",
+    xlarge: "75em",
+}
