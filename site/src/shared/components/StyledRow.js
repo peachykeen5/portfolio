@@ -3,6 +3,7 @@ import {
   space,
   justifyContent,
   display,
+  width,
   alignItems,
   flexDirection,
   color,
@@ -23,4 +24,13 @@ export const FixedWidthRow = styled(Row)`
   ${flexDirection};
   ${justifyContent};
   ${color};
+  ${width};
+  &: hover
+    ${(props) =>
+      props.hover
+        ? `{
+      transition: transform 0.333s;
+      transform: scale(1.04);
+    }`
+        : null};
 `;
