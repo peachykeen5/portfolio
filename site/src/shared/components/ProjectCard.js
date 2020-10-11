@@ -9,7 +9,7 @@ export const ProjectCard = ({ name, imageSource, link, body, theme, idx }) => {
       bg={theme.textLowContrast}
       padding={0}
       my={ds.spacing.s3}
-      style={{ width: "50%" }}
+      style={{ width: "50%", boxShadow: `2px 2px 5px #1f1f1f` }}
     >
       <Column
         order={idx % 2 === 0 ? 1 : 2}
