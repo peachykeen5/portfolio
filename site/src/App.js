@@ -50,7 +50,7 @@ const App = () => {
                       ? darkHeaderImage
                       : lightHeaderImage
                   }
-                  mw="30%"
+                  maxWidth={["90%", "50%", "30%"]}
                 />
                 <Headline
                   fontSize={[ds.typeScale.t7, ds.typeScale.t8]}

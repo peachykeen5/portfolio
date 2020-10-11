@@ -10,10 +10,11 @@ export const Skills = ({ skills, theme, idx }) => {
         return (
           <>
             <Column span={2} vc>
-              <Label>{so.label}</Label>
+              <Label key={`${i}${so.idx}`}>{so.label}</Label>
             </Column>
             <Column span={4} vc pr={ds.spacing.s3}>
               <ProgressBar
+                key={idx}
                 completed={so.progress}
                 color={
                   idx % 2 === 0 ? theme.secondaryContrast : theme.primaryContrast
