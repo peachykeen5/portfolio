@@ -28,23 +28,21 @@ export default {
         projects: [
             {
                 name: "TONIT Website",
-                link: "",
-                note: "Live project",
+                link: "https://www.tonit.com/",
+                body: "Marketing and promotional website for the TONIT motorcycle community app.  Built with Gatsby and integrated with Netlify CMS.",
+                imageSource: "tonitLogoLight.png",
             },
             {
                 name: "HuskiHealth",
-                link: "",
-                note: "Code base",
+                link: "https://github.com/peachykeen5/huski_health",
+                body: "A pet health tracking web app designed to help pet owners take the best care of their furry friend.",
+                imageSource: "hhLogoLight.png",
             },
             {
                 name: "ChattyApp",
-                link: "",
-                note: "Code base",
-            },
-            {
-                name: "Ruby on Rails",
-                link: "",
-                note: "Code base",
+                link: "https://github.com/peachykeen5/chattyapp",
+                body: "This project integrates a WebSocket server with a basic single page application to provide a seamless multi-user chat experience.",
+                imageSource: "chattyLogoLight.png",
             },
         ],
     },

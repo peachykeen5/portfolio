@@ -5,19 +5,26 @@ import * as ds from "../../uiLibrary";
 
 export const Skills = ({ skills, theme, idx }) => {
   return (
-    <FixedWidthRow mx={ds.spacing.s4} py={0}>
+    <FixedWidthRow mx={ds.spacing.s4} py={[ds.spacing.s3, 0]}>
       {skills.map((so, i) => {
         return (
           <>
             <Column span={2} vc>
-              <Label key={`${i}${so.idx}`}>{so.label}</Label>
+              <Label
+                key={`${i}${so.idx}`}
+                fontSize={[ds.typeScale.t4, ds.typeScale.t5]}
+              >
+                {so.label}
+              </Label>
             </Column>
             <Column span={4} vc pr={ds.spacing.s3}>
               <ProgressBar
                 key={idx}
                 completed={so.progress}
                 color={
-                  idx % 2 === 0 ? theme.secondaryContrast : theme.primaryContrast
+                  idx % 2 === 0
+                    ? theme.secondaryContrast
+                    : theme.primaryContrast
                 }
               />
             </Column>
