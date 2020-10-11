@@ -16,7 +16,11 @@ export const NavBar = (props) => {
     <StyledNavBar>
       <FixedWidthRow display={["none", "flex"]} justifyContent="space-around">
         {header.map((item) => {
-          return <Label color={props.theme.textHighContrast}>{item}</Label>;
+          return (
+            <a style={{ textDecoration: "none" }} href={`#${item}`}>
+              <Label color={props.theme.textHighContrast}>{item}</Label>
+            </a>
+          );
         })}
       </FixedWidthRow>
     </StyledNavBar>

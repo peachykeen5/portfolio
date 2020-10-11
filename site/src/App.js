@@ -71,7 +71,11 @@ const App = () => {
         </FixedWidthContainer>
         <FixedWidthContainer>
           <NavBar data={strings.navBar} theme={theme} />
-          <FixedWidthRow pb={[ds.spacing.s6, ds.spacing.s7]} pt={[ds.spacing.s5, ds.spacing.s6]}>
+          <FixedWidthRow
+            id={strings.navBar[0]}
+            pb={[ds.spacing.s6, ds.spacing.s7]}
+            pt={[ds.spacing.s5, ds.spacing.s6]}
+          >
             <Column
               display="flex"
               flexDirection="column"
@@ -95,6 +99,7 @@ const App = () => {
           </FixedWidthRow>
         </FixedWidthContainer>
         <FixedWidthContainer
+          id={strings.navBar[1]}
           bg={theme.constrastBackgroundLight}
           pt={[ds.spacing.s5, ds.spacing.s6]}
           pb={[ds.spacing.s6, ds.spacing.s7]}
@@ -118,7 +123,7 @@ const App = () => {
             return <Skills skills={skill} theme={theme} idx={i} />;
           })}
         </FixedWidthContainer>
-        <FixedWidthContainer>
+        <FixedWidthContainer id={strings.navBar[2]}>
           <FixedWidthRow py={[ds.spacing.s6, ds.spacing.s7]}>
             <Column
               display="flex"
@@ -163,6 +168,7 @@ const App = () => {
           </FixedWidthRow>
         </FixedWidthContainer>
         <FixedWidthContainer
+          id={strings.navBar[3]}
           bg={theme.contrastBackgroundOpposite}
           py={[ds.spacing.s5, ds.spacing.s6]}
         >
@@ -180,7 +186,7 @@ const App = () => {
                 {strings.fifthSection.title}
               </H2>
               {strings.fifthSection.projects.map((p, i) => {
-                return <ProjectCard {...p} idx={i} theme={theme}/>;
+                return <ProjectCard {...p} idx={i} theme={theme} />;
               })}
             </Column>
           </FixedWidthRow>
