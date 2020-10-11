@@ -70,9 +70,9 @@ const App = () => {
               </Column>
             </FixedWidthRow>
           </FixedWidthContainer>
-          <FixedWidthContainer pb={ds.spacing.s7}>
+          <FixedWidthContainer>
             <NavBar data={strings.navBar} theme={theme} />
-            <FixedWidthRow pt={ds.spacing.s6}>
+            <FixedWidthRow pb={ds.spacing.s6} pt={[ds.spacing.s6, 0]}>
               <Column
                 display="flex"
                 flexDirection="column"
@@ -97,9 +97,10 @@ const App = () => {
           </FixedWidthContainer>
           <FixedWidthContainer
             bg={theme.constrastBackgroundLight}
-            pb={ds.spacing.s7}
+            pt={[ds.spacing.s5, ds.spacing.s6]}
+            pb={[ds.spacing.s6, ds.spacing.s7]}
           >
-            <FixedWidthRow pt={ds.spacing.s6}>
+            <FixedWidthRow>
               <Column
                 display="flex"
                 flexDirection="column"
@@ -124,6 +125,7 @@ const App = () => {
                 display="flex"
                 flexDirection="column"
                 span={12}
+                textAlign="center"
                 alignItems="center"
               >
                 <H2
