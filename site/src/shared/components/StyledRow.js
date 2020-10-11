@@ -25,4 +25,12 @@ export const FixedWidthRow = styled(Row)`
   ${justifyContent};
   ${color};
   ${width};
+  &: hover
+    ${(props) =>
+      props.hover
+        ? `{
+      transition: transform 0.333s;
+      transform: scale(1.04);
+    }`
+        : null};
 `;
