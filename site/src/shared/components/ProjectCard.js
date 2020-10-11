@@ -9,16 +9,18 @@ export const ProjectCard = ({ name, imageSource, link, body, theme, idx }) => {
       bg={theme.textLowContrast}
       padding={0}
       my={ds.spacing.s3}
-      style={{ width: "50%", boxShadow: `2px 2px 5px #1f1f1f` }}
+      width={["90%", "50%"]}
+      style={{ boxShadow: `2px 2px 4px #2f2f2f` }}
     >
       <Column
-        order={idx % 2 === 0 ? 1 : 2}
+        order={[1, idx % 2 === 0 ? 1 : 2]}
         span={6}
         bg={theme.secondaryAccent}
         display="flex"
+        alignItems="center"
         padding={ds.spacing.s3}
       >
-        <LogoImage src={require(`../../images/${imageSource}`)} width={"150px"} />
+        <LogoImage src={require(`../../images/${imageSource}`)} width={["150px"]} />
       </Column>
       <Column
         span={6}
@@ -26,7 +28,7 @@ export const ProjectCard = ({ name, imageSource, link, body, theme, idx }) => {
         display="flex"
         padding={ds.spacing.s4}
         flexDirection="column"
-        textAlign={idx % 2 === 0 ? "right" : "left"}
+        textAlign={["center", idx % 2 === 0 ? "right" : "left"]}
       >
         <H3 my={0} fontWeight={700} color={theme.textHighContrast}>{name}</H3>
         <Body color={theme.textHighContrast}>{body}</Body>

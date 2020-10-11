@@ -3,6 +3,7 @@ import {
   space,
   justifyContent,
   display,
+  width,
   alignItems,
   flexDirection,
   color,
@@ -23,4 +24,5 @@ export const FixedWidthRow = styled(Row)`
   ${flexDirection};
   ${justifyContent};
   ${color};
+  ${width};
 `;
