@@ -3,7 +3,6 @@ import { ThemeContext, themeConfig } from "./shared/ThemeProvider";
 import {
   FixedWidthRow,
   Column,
-  Div,
   Background,
   FixedWidthContainer,
   CenteredImage,
