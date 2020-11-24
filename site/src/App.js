@@ -120,7 +120,7 @@ const App = () => {
             </Column>
           </FixedWidthRow>
           {skills.map((skill, i) => {
-            return <Skills skills={skill} theme={theme} idx={i} />;
+            return <Skills key={i} skills={skill} theme={theme} idx={i} />;
           })}
         </FixedWidthContainer>
         <FixedWidthContainer id={strings.navBar[2]}>

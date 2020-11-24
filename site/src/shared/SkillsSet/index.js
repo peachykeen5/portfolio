@@ -2,11 +2,11 @@ export const skills = [
     [
         {
             label: "React",
-            progress: 50,
+            progress: 70,
         },
         {
             label: "React Native",
-            progress: 55
+            progress: 70
         }
     ],
     [

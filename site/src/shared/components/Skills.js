@@ -8,10 +8,10 @@ export const Skills = ({ skills, theme, idx }) => {
     <FixedWidthRow mx={ds.spacing.s4} py={[ds.spacing.s3, 0]}>
       {skills.map((so, i) => {
         return (
-          <>
+          <React.Fragment key={`${i}${so.idx}`}>
             <Column span={2} vc>
               <Label
-                key={`${i}${so.idx}`}
+                key={so.label}
                 fontSize={[ds.typeScale.t4, ds.typeScale.t5]}
               >
                 {so.label}
@@ -19,7 +19,7 @@ export const Skills = ({ skills, theme, idx }) => {
             </Column>
             <Column span={4} vc pr={ds.spacing.s3}>
               <ProgressBar
-                key={idx}
+                key={`${idx}`}
                 completed={so.progress}
                 color={
                   idx % 2 === 0
@@ -28,7 +28,7 @@ export const Skills = ({ skills, theme, idx }) => {
                 }
               />
             </Column>
-          </>
+          </React.Fragment>
         );
       })}
     </FixedWidthRow>
