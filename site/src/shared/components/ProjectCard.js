@@ -20,7 +20,7 @@ export const ProjectCard = ({ name, imageSource, link, body, theme, idx }) => {
         bg={theme.textLowContrast}
         padding={0}
         my={ds.spacing.s3}
-        width={["90%", "50%"]}
+        width={["90%", "90%", "50%"]}
         style={{ boxShadow: `2px 2px 4px #2f2f2f` }}
       >
         <Column
@@ -33,7 +33,7 @@ export const ProjectCard = ({ name, imageSource, link, body, theme, idx }) => {
         >
           <LogoImage
             src={require(`../../images/${imageSource}`)}
-            width={["150px"]}
+            width={["150px", "120px", "150px"]}
           />
         </Column>
         <Column
