@@ -5,14 +5,14 @@ import * as ds from "../../uiLibrary";
 
 export const Skills = ({ skills, theme, idx }) => {
   return (
-    <FixedWidthRow mx={ds.spacing.s4} py={[ds.spacing.s3, 0]}>
+    <FixedWidthRow mx={[ds.spacing.s4, ds.spacing.s1]} py={[ds.spacing.s3, 0]}>
       {skills.map((so, i) => {
         return (
           <React.Fragment key={`${i}${so.idx}`}>
             <Column span={2} vc>
               <Label
                 key={so.label}
-                fontSize={[ds.typeScale.t4, ds.typeScale.t5]}
+                fontSize={[ds.typeScale.t5, ds.typeScale.t4, ds.typeScale.t5]}
               >
                 {so.label}
               </Label>

@@ -3,6 +3,7 @@ import {
   space,
   justifyContent,
   display,
+  maxWidth,
   width,
   alignItems,
   flexDirection,
@@ -24,6 +25,7 @@ export const FixedWidthRow = styled(Row)`
   ${flexDirection};
   ${justifyContent};
   ${color};
+  ${maxWidth};
   ${width};
   &: hover
     ${(props) =>

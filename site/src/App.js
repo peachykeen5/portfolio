@@ -89,8 +89,9 @@ const App = () => {
                 {strings.secondarySection.title}
               </H2>
               <Body
+                display="flex"
+                width={["90%", "90%", "50%"]}
                 color={theme.textHighContrast}
-                width={["100%", "50%"]}
                 textAlign="center"
               >
                 {strings.secondarySection.body}
@@ -155,9 +156,10 @@ const App = () => {
                       {e.date}
                     </H4>
                     <Body
+                      display="flex"
                       color={theme.textHighContrast}
                       textAlign="center"
-                      width={["100%", "50%"]}
+                      width={["90%", "90%", "50%"]}
                     >
                       {e.description}
                     </Body>
