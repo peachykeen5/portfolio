@@ -31,7 +31,7 @@ export const themeConfig = {
     primaryAccent: colors.darkBlue,
     primaryContrast: colors.pinkTwo,
     secondaryAccent: colors.blueAccent,
-    secondaryContrast: colors.darkPink,
+    secondaryContrast: colors.darkestBlue,
     tertiaryAccent: colors.lightBlue,
   },
 };

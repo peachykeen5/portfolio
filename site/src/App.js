@@ -12,8 +12,6 @@ import {
 } from "./shared/components";
 import { skills } from "./shared/SkillsSet";
 import * as ds from "./uiLibrary";
-import darkHeaderImage from "./images/headerPhoto3.jpg";
-import lightHeaderImage from "./images/headerPhoto2.jpeg";
 import { Headline, H3, H2, H4, Body, Label } from "./uiLibrary";
 import strings from "./shared/strings";
 import { ProjectCard } from "./shared/components/ProjectCard";
@@ -46,8 +44,8 @@ const App = () => {
               <CenteredImage
                 src={
                   theme === themeConfig.dark
-                    ? darkHeaderImage
-                    : lightHeaderImage
+                    ? `https://i.ibb.co/yh1Z2Yh/header-Photo3.jpg`
+                    : `https://i.ibb.co/m0NMhjS/header-Photo2.jpg`
                 }
                 maxWidth={["90%", "50%", "30%"]}
               />
