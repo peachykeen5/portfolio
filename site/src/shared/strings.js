@@ -19,7 +19,7 @@ export default {
                 companyName: "TONIT",
                 jobTitle: "intermediate front-end developer",
                 date: "August 2018 - present",
-                description: "Working at a small startup, one must wear many hats.  This is why, although my official title is intermediate front-end developer, I do have some full-stack experience.  My responsibilities include writing clean, well-organized code while taking into consideration reusability and quality.  I collaborate with my team and connect with other departments to establish the scope and expectations of each project.  Most of the work I do is within the app itself, but the TONIT website was my biggest solo project.  I am also involved in writing tests for the server codebase.  Beyond my role as a developer, I was also involved in planning, coordinating, and executing all team events.",
+                description: "Working at a small startup, one must wear many hats.  This is why, although my official title is intermediate front-end developer, I do have some full-stack experience.  My responsibilities include writing clean, well-organized code while taking into consideration reusability and quality.  I collaborate with my team and connect with other departments to establish the scope and expectations of each project.  Most of the work I do is within the app itself, but the TONIT website was my biggest solo project.  I am also involved in writing tests for the server codebase.  Beyond my role as a developer, I was am involved in planning, coordinating, and executing all team events.",
             },
         ],
     },

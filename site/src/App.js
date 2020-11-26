@@ -72,7 +72,7 @@ const App = () => {
         <FixedWidthContainer>
           <NavBar data={strings.navBar} theme={theme} />
           <FixedWidthRow
-            id={strings.navBar[0]}
+            id={strings.navBar[0].replace(/\s/g, '')}
             pb={[ds.spacing.s6, ds.spacing.s7]}
             pt={[ds.spacing.s5, ds.spacing.s6]}
           >
